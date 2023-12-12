@@ -9,3 +9,18 @@ alert (a+b);
 // alert( 6.35.toFixed(1) ); // 6.3
 
 alert( Math.round(6.35 * 10) / 10 ); // 6.35 -> 63.5 -> 64(rounded) -> 6.4
+
+// task-Repeat until the input is a number
+function readNumber() {
+    let num;
+  
+    do {
+      num = prompt("Enter a number please?", 0);
+    } while ( !isFinite(num) );
+  
+    if (num === null || num === '') return null;
+  
+    return +num;
+  }
+  
+  alert(`Read: ${readNumber()}`);
