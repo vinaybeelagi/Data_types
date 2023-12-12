@@ -13,3 +13,10 @@ alert( checkSpam('buy ViAgRA now') );
 alert( checkSpam('free xxxxx') );
 alert( checkSpam("innocent rabbit") ); 
 
+// task-Truncate the text
+function truncate(str, maxlength) {
+    return (str.length > maxlength) ?
+      str.slice(0, maxlength - 1) + '…' : str;
+  }
+
+
