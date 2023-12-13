@@ -69,11 +69,27 @@ let matrix = [
 console.log(matrix[1][2]);
 
 // task-Is array copied?
-let fruits = ["Apples", "Pear", "Orange"];
+let fruits5 = ["Apples", "Pear", "Orange"];
 
-let shoppingCart = fruits;
+let shoppingCart = fruits5;
 
 shoppingCart.push("Banana");
 
-alert( fruits.length ); // 4
+console.log( fruits5.length ); // 4
+
+// task-Array operations.
+let styles = ["Jazz","Blue"];
+console.log(styles);
+
+styles.push ("Rock-n-Roll");
+console.log(styles);
+
+styles[Math.floor(styles.length-1)/2]="Classics";
+console.log(styles);
+
+styles.shift();
+console.log(styles);
+
+styles.unshift("Rap","Reggae");
+console.log(styles);
 
