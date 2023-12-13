@@ -19,8 +19,8 @@
 // console.log(arr1[3]());
 
 // Get last elements with “at”
-let fruits = ["apple","orange","plum"];
-console.log(fruits[fruits.length-1]);
+let fruits = ["apple", "orange", "plum"];
+console.log(fruits[fruits.length - 1]);
 console.log(fruits.at(-1));
 console.log(fruits.at(-2));
 console.log(fruits.pop());
@@ -29,7 +29,7 @@ fruits.push("pear");
 console.log(fruits);
 console.log(fruits.shift());
 console.log(fruits);
-fruits.unshift("apple","lemon");
+fruits.unshift("apple", "lemon");
 console.log(fruits);
 
 // internals
@@ -37,34 +37,34 @@ let fruits2 = [];
 fruits2.name = "mark";
 fruits2[999] = 5;
 fruits2.age = 30;
-fruits2[1]={};
+fruits2[1] = {};
 fruits2[1].age = 25;
 console.log(fruits2);
 
 // pass by reference
-let car = ["BMW"]
+let car = ["BMW"];
 let vehicle = car;
 console.log(car === vehicle);
 vehicle.push("audi");
 console.log(car);
 
-let fruits3 = ["apple","banana","kiwi"];
+let fruits3 = ["apple", "banana", "kiwi"];
 for (let fruit of fruits3) {
-    console.log(fruit)
+  console.log(fruit);
 }
 
 //array length
-let arr2 = [1,2,3,4,5];
+let arr2 = [1, 2, 3, 4, 5];
 arr2.length = 2;
 console.log(arr2);
-arr2.length = 5
+arr2.length = 5;
 console.log(arr2[3]);
 
 // multidimensional arrays
 let matrix = [
-    [1,2,3,4],
-    [4,5,6,2],
-    [7,8,3,8]
+  [1, 2, 3, 4],
+  [4, 5, 6, 2],
+  [7, 8, 3, 8],
 ];
 console.log(matrix[1][2]);
 
@@ -75,30 +75,62 @@ let shoppingCart = fruits5;
 
 shoppingCart.push("Banana");
 
-console.log( fruits5.length ); // 4
+console.log(fruits5.length); // 4
 
 // task-Array operations.
-let styles = ["Jazz","Blue"];
+let styles = ["Jazz", "Blue"];
 console.log(styles);
 
-styles.push ("Rock-n-Roll");
+styles.push("Rock-n-Roll");
 console.log(styles);
 
-styles[Math.floor(styles.length-1)/2]="Classics";
+styles[Math.floor(styles.length - 1) / 2] = "Classics";
 console.log(styles);
 
 styles.shift();
 console.log(styles);
 
-styles.unshift("Rap","Reggae");
+styles.unshift("Rap", "Reggae");
 console.log(styles);
 
 // task-Calling in an array context
 let arr = ["a", "b"];
 
-arr.push(function() {
-  alert( this );
-})
+arr.push(function () {
+  alert(this);
+});
 
-arr[2](); // a,b,function(){...}
+arr[2](); // a,b,function(){...} 
 
+// task : Sum input numbers:method-1
+ 
+function userInput (){
+    let numbers = [];
+    while(true){
+        let value = prompt("enter a no.","0");
+        if (value ===null){break} ;
+        let num = parseFloat(value)
+        if(!isNaN(num)){
+            numbers.push(num)
+        }
+    }
+  return numbers.reduce((a,b)=>a+b,0)
+}
+alert(userInput());
+
+// task : Sum input numbers:method-1 
+function sumInput() {
+    let numbers = [];  
+    while (true) {  
+      let value = prompt("A number please?", 0);
+      if (value === "" || value === null || !isFinite(value)) break;  
+      numbers.push(+value);
+    }  
+    let sum = 0;
+    for (let number of numbers) {
+      sum += number;
+    }
+    return sum;
+  }
+  
+  alert( sumInput() );
