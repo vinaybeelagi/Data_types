@@ -23,3 +23,14 @@ let fruits = ["apple","orange","plum"];
 console.log(fruits[fruits.length-1]);
 console.log(fruits.at(-1));
 console.log(fruits.at(-2));
+console.log(fruits.pop());
+console.log(fruits);
+fruits.push("pear");
+console.log(fruits);
+console.log(fruits.shift());
+console.log(fruits);
+fruits.unshift("apple","lemon");
+console.log(fruits);
+
+
+
