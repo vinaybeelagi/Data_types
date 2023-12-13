@@ -48,4 +48,14 @@ console.log(car === vehicle);
 vehicle.push("audi");
 console.log(car);
 
+let fruits3 = ["apple","banana","kiwi"];
+for (let fruit of fruits3) {
+    console.log(fruit)
+}
 
+//array length
+let arr2 = [1,2,3,4,5];
+arr2.length = 2;
+console.log(arr2);
+arr2.length = 5
+console.log(arr2[3]);
