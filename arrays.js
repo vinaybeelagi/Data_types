@@ -34,9 +34,18 @@ console.log(fruits);
 
 // internals
 let fruits2 = [];
+fruits2.name = "mark";
 fruits2[999] = 5;
 fruits2.age = 30;
+fruits2[1]={};
+fruits2[1].age = 25;
 console.log(fruits2);
 
+// pass by reference
+let car = ["BMW"]
+let vehicle = car;
+console.log(car === vehicle);
+vehicle.push("audi");
+console.log(car);
 
 
