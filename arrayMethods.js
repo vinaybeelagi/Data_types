@@ -40,3 +40,24 @@ console.log(arr5.indexOf(false));
 console.log(arr5.indexOf(null));
 
 console.log(arr5.includes(1));
+
+// find and findIndex/findLastIndex
+let users = [
+    {id:1,name:"peter"},
+    {id:2,name:"jony"},
+    {id:3, name:"kate"},
+    {id:1,name:"peter"}
+
+];
+let user = users.find(item => item.id == 1);
+console.log(user.name);
+
+let user1 = users.findIndex(user1 => user1.name === "peter");
+console.log(user1);
+
+let user3 = users.findIndex(user3 => user3.name === "kate");
+console.log(user3);
+
+let user2 = users.findLastIndex(user2 => user2.name === "peter");
+console.log(user2);
+
