@@ -34,30 +34,51 @@
 // });
 
 // indexOf/lastIndexOf and includes
-let arr5 = [1,0,false];
-console.log(arr5.indexOf(0));
-console.log(arr5.indexOf(false));
-console.log(arr5.indexOf(null));
+// let arr5 = [1,0,false];
+// console.log(arr5.indexOf(0));
+// console.log(arr5.indexOf(false));
+// console.log(arr5.indexOf(null));
 
-console.log(arr5.includes(1));
+// console.log(arr5.includes(1));
 
-// find and findIndex/findLastIndex
-let users = [
-    {id:1,name:"peter"},
-    {id:2,name:"jony"},
-    {id:3, name:"kate"},
-    {id:1,name:"peter"}
+// // find and findIndex/findLastIndex
+// let users = [
+//     {id:1,name:"peter"},
+//     {id:2,name:"jony"},
+//     {id:3, name:"kate"},
+//     {id:1,name:"peter"}
 
+// ];
+// let user = users.find(item => item.id == 1);
+// console.log(user.name);
+
+// let user1 = users.findIndex(user1 => user1.name === "peter");
+// console.log(user1);
+
+// let user3 = users.findIndex(user3 => user3.name === "kate");
+// console.log(user3);
+
+// let user2 = users.findLastIndex(user2 => user2.name === "peter");
+// console.log(user2);
+
+// map and filter method
+const numbers = [1,2,3,4];
+const doubled = numbers.map(item => item*2);
+console.log(doubled);
+
+let str = ["venu","rocker","petel"]
+let length = str.map(item => item.length);
+console.log(length);
+
+const num = [1,2,3,4];
+const evens = num.filter(i=>i%2===0);
+console.log(evens);
+
+const students = [
+    {name:"aaru",grade:95},
+    {name:"viraj",grade:99},
+    {name:"raghu",grade:82},
+    {name:"john",grade:52}
 ];
-let user = users.find(item => item.id == 1);
-console.log(user.name);
-
-let user1 = users.findIndex(user1 => user1.name === "peter");
-console.log(user1);
-
-let user3 = users.findIndex(user3 => user3.name === "kate");
-console.log(user3);
-
-let user2 = users.findLastIndex(user2 => user2.name === "peter");
-console.log(user2);
-
+const studentGrades = students.filter(student => student.grade>=90);
+console.log(studentGrades);
