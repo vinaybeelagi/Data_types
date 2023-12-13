@@ -15,4 +15,14 @@ let arr3 = arr.splice(0, 2, 11, 12);
 console.log(arr);  // Output: [11, 12, 6, 8, 10]
 console.log(arr3); // Output: [2, 4]
 
+// array concat
+let num = [1,2];
+let num1 =num.concat([3,4]);
+console.log(num1);
+let num2 = num.concat([3,4],5,6);
+console.log(num2);
 
+let num3 = [1,2];
+let arraylike = {0:"some",length:"1"};
+let num4 = (num3.concat(arraylike));
+console.log(num4);
