@@ -93,3 +93,12 @@ console.log(styles);
 styles.unshift("Rap","Reggae");
 console.log(styles);
 
+// task-Calling in an array context
+let arr = ["a", "b"];
+
+arr.push(function() {
+  alert( this );
+})
+
+arr[2](); // a,b,function(){...}
+
