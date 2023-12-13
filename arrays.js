@@ -32,5 +32,11 @@ console.log(fruits);
 fruits.unshift("apple","lemon");
 console.log(fruits);
 
+// internals
+let fruits2 = [];
+fruits2[999] = 5;
+fruits2.age = 30;
+console.log(fruits2);
+
 
 
