@@ -59,3 +59,11 @@ arr2.length = 2;
 console.log(arr2);
 arr2.length = 5
 console.log(arr2[3]);
+
+// multidimensional arrays
+let matrix = [
+    [1,2,3,4],
+    [4,5,6,2],
+    [7,8,3,8]
+];
+console.log(matrix[1][2]);
