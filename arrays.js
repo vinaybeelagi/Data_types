@@ -67,3 +67,13 @@ let matrix = [
     [7,8,3,8]
 ];
 console.log(matrix[1][2]);
+
+// task-Is array copied?
+let fruits = ["Apples", "Pear", "Orange"];
+
+let shoppingCart = fruits;
+
+shoppingCart.push("Banana");
+
+alert( fruits.length ); // 4
+
