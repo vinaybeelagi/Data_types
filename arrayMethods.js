@@ -184,14 +184,32 @@
 // Shuffle(arr);
 // console.log(arr)
 
-// Get average age
-function getAverageAge(arr){
-    return arr.reduce((prev,cur) => prev + cur.age,0)/ arr.length;
+// Task-Get average age
+
+// let john = { name: "John", age: 25 };
+// let pete = { name: "Pete", age: 30 };
+// let mary = { name: "Mary", age: 29 };
+
+// let arr = [ john, pete, mary ];
+// function getAverageAge(arr){
+//     return arr.reduce((prev,cur) => prev + cur.age,0)/ arr.length;
+// }
+// console.log( getAverageAge(arr) )
+
+// Task-Filter unique array members
+function unique(arr){
+    let result = [];
+    for(let i=0;i<arr.length;i++){
+        let str = arr[i];
+        if(!result.includes(str)){
+            result.push(str);
+       }
+    }
+    return result;
 }
-let john = { name: "John", age: 25 };
-let pete = { name: "Pete", age: 30 };
-let mary = { name: "Mary", age: 29 };
+let strings = ["Hare", "Krishna", "Hare", "Krishna",
+  "Krishna", "Krishna", "Hare", "Hare", ":-O"
+];
 
-let arr = [ john, pete, mary ];
-
-console.log( getAverageAge(arr) )
+console.log( unique(strings) );
+console.log( unique(strings) );
