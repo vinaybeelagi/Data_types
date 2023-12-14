@@ -62,23 +62,31 @@
 // console.log(user2);
 
 // map and filter method
-const numbers = [1,2,3,4];
-const doubled = numbers.map(item => item*2);
-console.log(doubled);
+// const numbers = [1,2,3,4];
+// const doubled = numbers.map(item => item*2);
+// console.log(doubled);
 
-let str = ["venu","rocker","petel"]
-let length = str.map(item => item.length);
-console.log(length);
+// let str = ["venu","rocker","petel"]
+// let length = str.map(item => item.length);
+// console.log(length);
 
-const num = [1,2,3,4];
-const evens = num.filter(i=>i%2===0);
-console.log(evens);
+// const num = [1,2,3,4];
+// const evens = num.filter(i=>i%2===0);
+// console.log(evens);
 
-const students = [
-    {name:"aaru",grade:95},
-    {name:"viraj",grade:99},
-    {name:"raghu",grade:82},
-    {name:"john",grade:52}
-];
-const studentGrades = students.filter(student => student.grade>=90);
-console.log(studentGrades);
+// const students = [
+//     {name:"aaru",grade:95},
+//     {name:"viraj",grade:99},
+//     {name:"raghu",grade:82},
+//     {name:"john",grade:52}
+// ];
+// const studentGrades = students.filter(student => student.grade>=90);
+// console.log(studentGrades);
+
+// Task-Translate border-left-width to borderLeftWidth
+function camelize(str){
+    return str.split('-')
+    .map((word,index) => index === 0 ? word : word[0].toUpperCase()+ word.slice(1))
+    .join('');
+}
+console.log(camelize("my-short-string" ));
