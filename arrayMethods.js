@@ -159,16 +159,27 @@
 // console.log(usersMapped[0].fullName);
 
 // Task-Sort users by age
-function sortByAge(arr){
-    arr.sort((a,b)=> a.age - b.age);
+// function sortByAge(arr){
+//     arr.sort((a,b)=> a.age - b.age);
+// }
+// let john = { name: "John", age: 25 };
+// let pete = { name: "Pete", age: 30 };
+// let mary = { name: "Mary", age: 28 };
+
+// let arr = [ pete, john, mary ];
+// sortByAge(arr);
+// console.log(arr);
+// console.log(arr[0].name); 
+// console.log(arr[1].name); 
+// console.log(arr[2].name); 
+
+// Task-Shuffle an array
+function Shuffle(array){
+    for(let i = array.length-1;i>0;i--){
+        let j = Math.floor(Math.random()*(i+1));
+        [array[i],array[j]] = [array[j],array[i]];
+    }
 }
-let john = { name: "John", age: 25 };
-let pete = { name: "Pete", age: 30 };
-let mary = { name: "Mary", age: 28 };
-
-let arr = [ pete, john, mary ];
-sortByAge(arr);
-
-console.log(arr[0].name); 
-console.log(arr[1].name); 
-console.log(arr[2].name); 
+let arr = [1,2,3]
+Shuffle(arr);
+console.log(arr)
