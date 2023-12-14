@@ -115,7 +115,23 @@
 //   console.log(arr); // Output: [3, 1]
   
 // Task-Sort in decreasing order
-let arr = [5,2,1,-10,8];
-arr.sort((a,b) => b-a);
-console.log(arr);
-  
+// let arr = [5,2,1,-10,8];
+// arr.sort((a,b) => b-a);
+// console.log(arr);
+
+// task-Copy and sort array
+function copySorted(arr){
+    return arr.slice().sort();
+}
+let arr = ["HTML", "JavaScript", "CSS"];
+let sorted = copySorted(arr);
+console.log(sorted);
+console.log(arr);  
+// another method
+function copySort(arr1){
+    return [...arr1].sort();
+}
+let arr1 = ["HTML", "JavaScript", "CSS"];
+let sort = copySort(arr1);
+console.log(sort);
+console.log(arr1); 
