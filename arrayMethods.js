@@ -174,12 +174,24 @@
 // console.log(arr[2].name); 
 
 // Task-Shuffle an array
-function Shuffle(array){
-    for(let i = array.length-1;i>0;i--){
-        let j = Math.floor(Math.random()*(i+1));
-        [array[i],array[j]] = [array[j],array[i]];
-    }
+// function Shuffle(array){
+//     for(let i = array.length-1;i>0;i--){
+//         let j = Math.floor(Math.random()*(i+1));
+//         [array[i],array[j]] = [array[j],array[i]];
+//     }
+// }
+// let arr = [1,2,3]
+// Shuffle(arr);
+// console.log(arr)
+
+// Get average age
+function getAverageAge(arr){
+    return arr.reduce((prev,cur) => prev + cur.age,0)/ arr.length;
 }
-let arr = [1,2,3]
-Shuffle(arr);
-console.log(arr)
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 29 };
+
+let arr = [ john, pete, mary ];
+
+console.log( getAverageAge(arr) )
