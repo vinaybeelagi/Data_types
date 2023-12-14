@@ -84,18 +84,34 @@
 // console.log(studentGrades);
 
 // Task-Translate border-left-width to borderLeftWidth
-function camelize(str){
-    return str.split('-')
-    .map((word,index) => index === 0 ? word : word[0].toUpperCase()+ word.slice(1))
-    .join('');
-}
-console.log(camelize("my-short-string" ));
+// function camelize(str){
+//     return str.split('-')
+//     .map((word,index) => index === 0 ? word : word[0].toUpperCase()+ word.slice(1))
+//     .join('');
+// }
+// console.log(camelize("my-short-string" ));
 
-// task-Filter range
-function filterRange(arr,a,b){
-    return arr.filter (i => (a <= i && i<= b));
+// // task-Filter range
+// function filterRange(arr,a,b){
+//     return arr.filter (i => (a <= i && i<= b));
+// }
+// let arr = [5,3,8,1];
+// let filtered = filterRange(arr, 1, 4);
+// console.log( filtered ); 
+// console.log(arr);
+
+//Task-Filter range "in place"
+function filterRangeInPlace(arr, a, b) {
+   for(let i=0;i<arr.length;i++){
+    let val = arr[i];   
+   if (val < a || val > b) {
+    arr.splice(i,1);
+    i--;
+   }
 }
-let arr = [5,3,8,1];
-let filtered = filterRange(arr, 1, 4);
-console.log( filtered ); 
-console.log(arr);
+}
+let arr = [5, 3, 8, 1];
+filterRangeInPlace(arr, 1, 4);
+  console.log(arr); // Output: [3, 1]
+  
+  
