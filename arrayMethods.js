@@ -120,18 +120,27 @@
 // console.log(arr);
 
 // task-Copy and sort array
-function copySorted(arr){
-    return arr.slice().sort();
-}
-let arr = ["HTML", "JavaScript", "CSS"];
-let sorted = copySorted(arr);
-console.log(sorted);
-console.log(arr);  
-// another method
-function copySort(arr1){
-    return [...arr1].sort();
-}
-let arr1 = ["HTML", "JavaScript", "CSS"];
-let sort = copySort(arr1);
-console.log(sort);
-console.log(arr1); 
+// function copySorted(arr){
+//     return arr.slice().sort();
+// }
+// let arr = ["HTML", "JavaScript", "CSS"];
+// let sorted = copySorted(arr);
+// console.log(sorted);
+// console.log(arr);  
+// // another method
+// function copySort(arr1){
+//     return [...arr1].sort();
+// }
+// let arr1 = ["HTML", "JavaScript", "CSS"];
+// let sort = copySort(arr1);
+// console.log(sort);
+// console.log(arr1); 
+
+// Task -Map to names:
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+
+let users = [ john, pete, mary ];
+ let names = users.map(item => item.name);
+console.log(names);
