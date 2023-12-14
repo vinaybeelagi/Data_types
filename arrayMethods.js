@@ -90,3 +90,12 @@ function camelize(str){
     .join('');
 }
 console.log(camelize("my-short-string" ));
+
+// task-Filter range
+function filterRange(arr,a,b){
+    return arr.filter (i => (a <= i && i<= b));
+}
+let arr = [5,3,8,1];
+let filtered = filterRange(arr, 1, 4);
+console.log( filtered ); 
+console.log(arr);
