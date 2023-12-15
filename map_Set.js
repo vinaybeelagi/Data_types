@@ -31,3 +31,18 @@ let team = {player:"virat"};
 visitCountMap.set(team,98)
 console.log(visitCountMap);
 console.log(visitCountMap.get(team));
+
+console.log(visitCountMap.has(team));
+
+// clear() mehod
+const map2 = new Map();
+map2.set('bar','baz');
+map2.set(1,'foo');
+console.log(map2.size);
+map2.clear();
+console.log(map2.size);
+// delete()
+const map3 = new Map();
+map3.set('bar','foo');
+console.log(map3.delete('bar'));
+console.log(map3.has('bar'));
