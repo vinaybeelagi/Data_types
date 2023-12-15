@@ -197,19 +197,19 @@
 // console.log( getAverageAge(arr) )
 
 // Task-Filter unique array members
-function unique(arr){
-    let result = [];
-    for(let i=0;i<arr.length;i++){
-        let str = arr[i];
-        if(!result.includes(str)){
-            result.push(str);
-       }
-    }
-    return result;
-}
-let strings = ["Hare", "Krishna", "Hare", "Krishna",
-  "Krishna", "Krishna", "Hare", "Hare", ":-O"
-];
+// function unique(arr){
+//     let result = [];
+//     for(let i=0;i<arr.length;i++){
+//         let str = arr[i];
+//         if(!result.includes(str)){
+//             result.push(str);
+//        }
+//     }
+//     return result;
+// }
+// let strings = ["Hare", "Krishna", "Hare", "Krishna",
+//   "Krishna", "Krishna", "Hare", "Hare", ":-O"
+// ];
 
-console.log( unique(strings) );
-console.log( unique(strings) );
+// console.log( unique(strings) );
+// console.log( unique(strings) );
