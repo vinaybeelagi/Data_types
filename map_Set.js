@@ -19,4 +19,15 @@ console.log(map1.size);
 map1.delete('b');
 console.log(map1.size);
 map1.set({user:"gyan",age:82},"marathon").set("key1","value1")
-console.log(map1)
+console.log(map1);
+
+// Map can also use objects as keys
+let john = {name:"john"};
+let visitCountMap = new Map();
+visitCountMap.set(john,123);
+console.log(visitCountMap);
+console.log(visitCountMap.get(john));
+let team = {player:"virat"};
+visitCountMap.set(team,98)
+console.log(visitCountMap);
+console.log(visitCountMap.get(team));
