@@ -75,3 +75,7 @@ let recipeMap = new Map([
     console.log(entry);
   }
 
+//forEach method
+recipeMap.forEach((value,key,map) => {
+  console.log(`${key}:${value}`)
+})
