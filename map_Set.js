@@ -136,3 +136,14 @@ function aclean(arr) {
 let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
 
 alert( aclean(arr) );
+
+// Iterable keys
+let map7 = new Map();
+
+map.set("name", "John");
+
+let keys = Array.from(map7.keys());
+
+keys.push("more");
+
+console.log(keys); 
