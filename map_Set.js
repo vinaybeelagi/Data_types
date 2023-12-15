@@ -46,3 +46,32 @@ const map3 = new Map();
 map3.set('bar','foo');
 console.log(map3.delete('bar'));
 console.log(map3.has('bar'));
+
+//entries() method 
+const map4 = new Map();
+map4.set('0','foo');
+map4.set(1,'bar');
+
+const iterator1 = map4.entries();
+console.log(map4.entries());
+console.log(iterator1.next().value);
+console.log(iterator1.next().value);
+console.log(map4.get(1));
+
+//Iteration over Map
+let recipeMap = new Map([
+    ['cucumber', 500],
+    ['tomatoes', 350],
+    ['onion',    50]
+  ]);
+  for (let vegetable of recipeMap.keys()){
+    console.log(vegetable);
+  }
+
+  for(let amount of recipeMap.values()){
+    console.log(amount);
+  }
+  for(let entry of recipeMap){
+    console.log(entry);
+  }
+
