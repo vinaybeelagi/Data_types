@@ -79,3 +79,11 @@ let recipeMap = new Map([
 recipeMap.forEach((value,key,map) => {
   console.log(`${key}:${value}`)
 })
+//Object.fromEntries
+let map6 = new Map();
+map6.set('banana', 1);
+map6.set('orange', 2);
+map6.set('meat', 4);
+let obj = Object.fromEntries(map6.entries());
+console.log(obj)
+console.log(obj.meat);
