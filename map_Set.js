@@ -18,3 +18,5 @@ console.log(map1.get('a'));
 console.log(map1.size);
 map1.delete('b');
 console.log(map1.size);
+map1.set({user:"gyan",age:82},"marathon").set("key1","value1")
+console.log(map1)
