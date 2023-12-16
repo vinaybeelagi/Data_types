@@ -156,3 +156,29 @@ set1.add(55);
 for(let item of set1){
   console.log(item);
 }
+console.log(set1.size);
+set1.clear();
+console.log(set1.size);
+
+// set.delete()method
+const set2 = new Set();
+set2.add({x:10,y:20}).add({x:20,y:40})
+set2.forEach((point)=>{
+  if(point.x>10){
+    set2.delete(point);
+      }
+});
+console.log(set2);
+console.log(set2.size);
+
+// keys() method
+const mySet = new Set();
+mySet.add("foo");
+mySet.add("bar");
+mySet.add("baz");
+
+const setIter = mySet.keys();
+
+console.log(setIter.next().value); // "foo"
+console.log(setIter.next().value); // "bar"
+console.log(setIter.next().value); // "baz"
