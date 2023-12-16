@@ -182,3 +182,16 @@ const setIter = mySet.keys();
 console.log(setIter.next().value); // "foo"
 console.log(setIter.next().value); // "bar"
 console.log(setIter.next().value); // "baz"
+
+// set.values()
+const set3 = new Set();
+set3.add(42);
+set3.add('forty two');
+
+const iterator1 = set3.values();
+
+console.log(iterator1.next().value);
+// Expected output: 42
+
+console.log(iterator1.next().value);
+// Expected output: "forty two"
