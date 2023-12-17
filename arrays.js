@@ -148,3 +148,11 @@ index = -2;
 
 console.log(`An index of ${index} returns ${array1.at(index)}`);
 // Expected output: "An index of -2 returns 130"
+
+// array.concat()
+const letters = ["a", "b", "c"];
+const numbers = [1, 2, 3];
+
+const alphaNumeric = letters.concat(numbers);
+console.log(alphaNumeric);
+// results in ['a', 'b', 'c', 1, 2, 3]
