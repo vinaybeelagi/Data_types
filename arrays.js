@@ -156,3 +156,11 @@ const numbers = [1, 2, 3];
 const alphaNumeric = letters.concat(numbers);
 console.log(alphaNumeric);
 // results in ['a', 'b', 'c', 1, 2, 3]
+
+// Array.every()
+const isBelowThreshold = (currentValue) => currentValue < 40;
+
+const array1 = [1, 30, 39, 29, 10, 13];
+
+console.log(array1.every(isBelowThreshold));
+// Expected output: true
