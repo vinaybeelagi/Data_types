@@ -37,4 +37,12 @@ const student = {details:{name:'Alice',age:26}};
 const {details:{name:studentName,age:studentAge}}=student;
 console.log(studentName,studentAge);
 
+//Looping with .entries()
+let user = {
+    name : "rohit",
+    age:38
+};
+for(let [key, value] of Object.entries(user)){
+    console.log(`${key}:${value}`);
+}
 
