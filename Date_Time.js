@@ -13,23 +13,30 @@
 // alert( d2 );
 
 // Show a weekday
-function getWeekDay(date) {
-    let days = ['SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA'];
+// function getWeekDay(date) {
+//     let days = ['SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA'];
   
-    return days[date.getDay()];
-  }
+//     return days[date.getDay()];
+//   }
   
-  let date = new Date(2014, 0, 3); 
-  alert( getWeekDay(date) ); 
+//   let date = new Date(2014, 0, 3); 
+//   alert( getWeekDay(date) ); 
 
-//   task-european weekday
-function getLocalDay(date) {
+// //   task-european weekday
+// function getLocalDay(date) {
 
-    let day = date.getDay();
+//     let day = date.getDay();
   
-    if (day == 0) { // weekday 0 (sunday) is 7 in european
-      day = 7;
-    }
+//     if (day == 0) { // weekday 0 (sunday) is 7 in european
+//       day = 7;
+//     }
   
-    return day;
-  }
+//     return day;
+//   }
+
+//   Which day of month was many days ago?
+let date = new Date(2015, 0, 2);
+
+alert( getDateAgo(date, 1) ); 
+alert( getDateAgo(date, 2) ); 
+alert( getDateAgo(date, 365) );
