@@ -14,3 +14,16 @@ sum += item;
 return sum;
   }
   console.log(sumSalaries(salaries));
+
+//  Task: Count properties
+
+let user1= {
+    name: 'John',
+    age: 30
+  };
+  
+  function count(user1) {
+    return Object.values(user1).length;
+  }
+
+  console.log(count(user1));
