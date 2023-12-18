@@ -1,10 +1,23 @@
-// craetion 
-let now = new Date();
-console.log(now);
+// // craetion 
+// let now = new Date();
+// console.log(now);
 
-let date = new Date(2011, 0, 1, 2, 3, 4, 567);
-console.log( date ); // 1.01.2011, 02:03:04.567
+// let date = new Date(2011, 0, 1, 2, 3, 4, 567);
+// console.log( date ); // 1.01.2011, 02:03:04.567
 
-// task-Create a date
-let d1 = new Date(2012,1,20,3,12);
-alert(d1);
+// // task-Create a date
+// let d1 = new Date(2012,1,20,3,12);
+// alert(d1);
+// //new Date(datastring)
+// let d2 = new Date("2012-02-20T03:12");
+// alert( d2 );
+
+// Show a weekday
+function getWeekDay(date) {
+    let days = ['SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA'];
+  
+    return days[date.getDay()];
+  }
+  
+  let date = new Date(2014, 0, 3); 
+  alert( getWeekDay(date) ); 
