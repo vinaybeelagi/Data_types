@@ -20,3 +20,15 @@ let user = {
   };
   
   console.log( JSON.stringify(user) );
+
+//   nested objects are supported and converted automatically
+let meetup = {
+  title: "Conference",
+  room: {
+    number: 23,
+    participants: ["john", "ann"]
+  }
+};
+
+console.log( JSON.stringify(meetup) );
+
