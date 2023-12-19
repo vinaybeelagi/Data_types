@@ -57,3 +57,21 @@ let user4 = {
   let user5 = JSON.parse(JSON.stringify(user4));
   console.log(user5);
 
+//   task-
+let room = {
+    number: 23
+  };
+  
+  let meetup2= {
+    title: "Conference",
+    occupiedBy: [{name: "John"}, {name: "Alice"}],
+    place: room
+  };
+  
+  room.occupiedBy = meetup;
+  meetup2.self = meetup2;
+  
+  alert( JSON.stringify(meetup2, function replacer(key, value) {
+    return (key != "" && value == meetup) ? undefined : value;
+  }));
+
